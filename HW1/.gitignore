@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+*.pt
+*.safetensors
+*_predictions.jsonl
+*_full_model/
+q4_results/
