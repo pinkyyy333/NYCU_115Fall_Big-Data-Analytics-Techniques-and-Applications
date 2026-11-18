@@ -5,5 +5,5 @@ Course assignment implementations.
 - [HW1](HW1/): model fine-tuning experiments and report.
 - [HW2](HW2/): reproducible GitHub activity prediction with relational and temporal modeling.
 
-HW2 publishes source code, reproducibility instructions and aggregate validation metrics.
+HW2 publishes model source code, runtime configuration/dependencies and execution instructions.
 Downloaded data, per-user predictions, model weights and personal presentation materials stay local.

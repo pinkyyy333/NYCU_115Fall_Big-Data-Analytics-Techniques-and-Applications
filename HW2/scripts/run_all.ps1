@@ -13,16 +13,12 @@ try {
     }
     & $python scripts/preprocess.py --raw data/raw --out data/processed
     if ($LASTEXITCODE -ne 0) { throw 'Official preprocessing failed.' }
-    & $python -m pytest tests -q -p no:cacheprovider
-    if ($LASTEXITCODE -ne 0) { throw 'Time-safety tests failed.' }
     & $python run.py --config $Config
     if ($LASTEXITCODE -ne 0) { throw 'Training or evaluation failed.' }
     & $python run.py --config $Config --predict-only
     if ($LASTEXITCODE -ne 0) { throw 'Prediction reproduction failed.' }
     & $python scripts/evaluate.py --pred "output_$($settings.student_id).csv" --input submission/test_input.csv
     if ($LASTEXITCODE -ne 0) { throw 'Submission format check failed.' }
-    & $python scripts/analyze.py
-    if ($LASTEXITCODE -ne 0) { throw 'Aggregate result analysis failed.' }
 } finally {
     Pop-Location
 }

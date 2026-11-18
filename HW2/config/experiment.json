@@ -1,7 +1,5 @@
 {
   "student_id": "YOUR_STUDENT_ID",
-  "student_name": "Student",
-  "public_repository": "https://github.com/pinkyyy333/NYCU_115Fall_Big-Data-Analytics-Techniques-and-Applications/tree/main/HW2",
   "seed": 42,
   "raw_start_utc": "2026-10-10T16:00:00",
   "raw_end_utc_exclusive": "2026-11-17T16:00:00",
