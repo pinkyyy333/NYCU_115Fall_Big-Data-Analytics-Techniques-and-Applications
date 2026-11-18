@@ -1,0 +1,23 @@
+{
+  "student_id": "YOUR_STUDENT_ID",
+  "student_name": "Student",
+  "public_repository": "https://github.com/pinkyyy333/NYCU_115Fall_Big-Data-Analytics-Techniques-and-Applications/tree/main/HW2",
+  "seed": 42,
+  "raw_start_utc": "2026-10-10T16:00:00",
+  "raw_end_utc_exclusive": "2026-11-17T16:00:00",
+  "train_cutoffs_utc": [
+    "2026-10-24T16:00:00"
+  ],
+  "tune_cutoff_utc": "2026-10-31T16:00:00",
+  "validation_cutoff_utc": "2026-11-07T16:00:00",
+  "prediction_cutoff_utc": "2026-11-21T16:00:00",
+  "horizon_days": 7,
+  "lookback_days": 14,
+  "hidden_dim": 32,
+  "graph_layers": 2,
+  "epochs": 45,
+  "learning_rate": 0.003,
+  "weight_decay": 0.0001,
+  "max_nodes_per_table": 40000,
+  "official_commit": "af9f335301d9badb482dfafa10c4534eabac845a"
+}

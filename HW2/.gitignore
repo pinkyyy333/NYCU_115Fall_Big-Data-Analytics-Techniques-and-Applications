@@ -1,0 +1,34 @@
+# Local environments, caches and credentials.
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+pytest-cache-files-*/
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Downloaded official anonymized inputs (fetched from the pinned upstream commit).
+scripts/cohort.txt
+submission/
+
+# Data, outputs, weights, local metadata and private presentation materials.
+data/
+artifacts/
+reports/
+logs/
+config/*.local.json
+output_*.csv
+*.parquet
+*.json.gz
+*.pt
+*.pth
+*.mp4
+*.pptx
+*.pdf
+*.part
+~$*
